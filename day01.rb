@@ -1,12 +1,10 @@
-s = File.read("input.txt")
+s = File.read("input01.txt")
 
 rows = s.split.map(&:strip)
 
 dial = 50
 
 score = 0
-
-puts rows.length
 
 rows.each do |row|
     num = row[1...].to_i
